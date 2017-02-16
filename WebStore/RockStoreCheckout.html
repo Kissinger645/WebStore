@@ -3,11 +3,11 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link href="Content/bootstrap.css" rel="stylesheet" type="text/css"
-    <title>Rick's Rocks Checkout</title>
+    <title>Smiley Rock Details</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div>
+    <div class="container">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
 
@@ -20,7 +20,6 @@
                     </button>
                     <a class="navbar-brand" href="#">Rick's Rocks</a>
                 </div>
-
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
@@ -61,32 +60,43 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-        <h2>CHECKOUT</h2>
-        <div class="list-group">
-            <button type="button" class="list-group-item">Item 1 blah blah blah</button>
-            <button type="button" class="list-group-item">Item 2 blah blah blah</button>
-            <button type="button" class="list-group-item">Item 3 blah blah blah</button>
-            <button type="button" class="list-group-item">Item 4 blah blah blah</button>
-            <button type="button" class="list-group-item">Item 5 blah blah blah</button>
+
+        <div class="panel">
+            <div class="page-header"><h3>Checkout</h3></div>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr> <td>Item</td> <td>Price</td> <td>Quantity</td> <td>Total</td> </tr>
+                </thead>
+                <tbody>
+                    <tr> <td>Rock</td> <td>$1.00</td> <td>1</td> <td>$1.00</td></tr>
+                    <tr> <td>Rock 2</td> <td>$1.00</td> <td>1</td> <td>$1.00</td></tr>
+                    <tr> <td>Rock 3</td> <td>$1.00</td> <td>1</td> <td>$1.00</td></tr>
+                    <tr> <td>Big Rock</td> <td>$1.00</td> <td>1</td> <td>$1.00</td></tr>
+                    <tr> <td>Little Rock</td> <td>$1.00</td> <td>10</td> <td>$10.00</td></tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td></tr>
+                    <tr> <td></td> <td></td> <td>Order Total</td> <td>$14.00</td></tr>
+                </tbody>
+            </table>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            Blah, blah, blah...I agree to pay all the money!
+                            <input type="checkbox">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <button type="button" class="btn btn-danger">Pay Now</button>
+                    </div>
+                </div>
+
+            <div class="panel-footer">Rick's Rocks 1211 Main Street Greenville, SC (864) 422-01223</div>
         </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="input-group">
-                    <span class="input-group-addon">
-                        <input type="checkbox" aria-label="...">
-                    </span>I agree to pay all the money
-                </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-
-
-            <button type="button" class="btn btn-default btn-lg">
-                <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>Pay now
-            </button>
-
-        </div>
-            <div class="panel-footer">Rick's Rocks    1211 Main Street Greenville, SC (864) 422-01223</div>
-        </div>
-
     </div>
 </body>
 </html>
